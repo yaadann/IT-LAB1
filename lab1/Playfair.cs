@@ -48,6 +48,13 @@
                             table[i, j] = key[keyCursor];
                             keyCursor++;
                         }
+                        else
+                        {
+                            while (IsTableContains(alphabetCursor))
+                                alphabetCursor++;
+                            table[i, j] = alphabetCursor;
+                            alphabetCursor++;
+                        }
                     }
                     else
                     {
